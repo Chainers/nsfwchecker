@@ -1,7 +1,7 @@
 import os
 
 USER = 'pmartynov'
-HOST = '35.187.61.86'
+HOST = '188.166.10.248'
 
 CURRENT_HOST = HOST  # Replace with domain
 
