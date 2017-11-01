@@ -21,4 +21,7 @@ from nsfwchecker.core import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.IndexView.as_view(), name='index'),
+    url(r'^api/', include('nsfwchecker.nsfw_recognizer.urls',
+                          namespace='nsfw_recognizer',
+                          app_name='nsfw_recognizer')),
 ]

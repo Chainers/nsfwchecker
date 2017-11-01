@@ -59,6 +59,9 @@ INSTALLED_APPS = [
 
     'django_extensions',
 
+    'rest_framework',
+    # 'rest_framework.authtoken',
+    # 'rest_framework_swagger',
     'nsfwchecker.core',
 ]
 
@@ -167,3 +170,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(PROJECT_PATH, 'static'),
 )
+
+MAX_UPLOAD_SIZE = 10485760  # 10 MB
+
+NSFW_MODEL_WEIGHTS_FILE = os.path.join(PROJECT_PATH, 'nsfw_recognizer', 'models', 'open_nsfw-weights.npy')
