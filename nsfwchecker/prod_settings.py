@@ -36,7 +36,7 @@ PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 if DEBUG:
     ALLOWED_HOSTS = ['*']
 else:
-    ALLOWED_HOSTS = [HOST, CURRENT_HOST]
+    ALLOWED_HOSTS = [HOST, CURRENT_HOST, 'www.%s' % HOST, 'www.%s'% CURRENT_HOST]
 
 
 ADMINS = (

@@ -1,9 +1,9 @@
 import os
 
-USER = 'pmartynov'
+USER = 'root'
 HOST = '188.166.10.248'
 
-CURRENT_HOST = HOST  # Replace with domain
+CURRENT_HOST = 'nsfwchecker.com'  # Replace with domain
 
 # KEY_FILENAME = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'private.key')
 KEY_FILENAME = '~/.ssh/id_rsa'
@@ -11,7 +11,6 @@ KEY_FILENAME = '~/.ssh/id_rsa'
 REPOSITORY = 'https://github.com/pmartynov/nsfwchecker'
 
 PROJECT_NAME = 'nsfwchecker'
-
 
 # We use non-root user for better security
 DEPLOYMENT_USER = 'nsfwchecker'
