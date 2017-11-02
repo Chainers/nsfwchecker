@@ -9,10 +9,19 @@
 
 {% block content %}
 <div class="content">
-    <input type="file" id="ff"><br>
+    <h2 style="color:#1a5099;font-size:30px;">NSFW Checker</h2>
+    <h1 style="color:#ff001f;font-size:40px;">Is my image safe for work?</h1>
+    <img src="" style="max-width:200px; max-height:200px;" />
+    <div>
+    <span style="background-color:#1a5099; height:18px; color: white; padding:10px; font-weight: bold; display: inline-block; margin: 20px 0px; cursor:pointer;" class='select-file'>Select File</span>
+    </div>
+    <input type="file" id="ff" style="visibility:hidden;">
+    <div style="color:#1a5099; font-weight:bold; padding-bottom: 8px;">or paste image URL here</div>
+    <div>
+    <input type='text' style="height:38px; border-color:#1a5099; border-style:solid;" class='url' />
+    <span style="background-color:#1a5099; color: white; padding:10px; font-weight: bold; display: inline-block; border: 2px solid; border-color:#1a5099; height: 20px; cursor:pointer;" class='checkbtn'>Check</span>
+    </div>
     <div id="loader"></div><br>
-    <label for="fileupload"> Select a file to upload</label>
-    <input type="button" value="Send" id="jj" width="100">
-    <p id="rate"> </p>
+    <p id="rate"></p>
 </div>
 {% endblock %}
