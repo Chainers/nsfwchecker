@@ -9,7 +9,10 @@
 
 {% block content %}
 <div class="content">
-    NSFW Checker
-    {{form}}
+    <input type="file" id="ff"><br>
+    <div id="loader"></div><br>
+    <label for="fileupload"> Select a file to upload</label>
+    <input type="button" value="Send" id="jj" width="100">
+    <p id="rate"> </p>
 </div>
 {% endblock %}
