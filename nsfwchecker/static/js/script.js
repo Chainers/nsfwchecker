@@ -20,6 +20,7 @@ $(document).ready(function(){
 
         $("#loader").show();
         $(".loader-text").show();
+        $('#rate').hide();
         $('img').attr('src', url);
         $.ajax({
             url: "https://nsfwchecker.com/api/nsfw_url_recognizer",
@@ -31,6 +32,7 @@ $(document).ready(function(){
                     $("#loader").hide();
                     $(".loader-text").hide();
                     $("#rate").text("Your NSFW rate: " + rate * 100 + "%");
+                    $("#rate").show();
             },
             error: function(jqXHR, textStatus, errorMessage) {
                 console.log(errorMessage); // Optional
@@ -41,6 +43,7 @@ $(document).ready(function(){
     function uploadFile() {
         $("#loader").show();
         $(".loader-text").show();
+        $('#rate').hide();
         var blobFile = ($("#ff"))[0].files[0];
         if (blobFile) {
             var reader = new FileReader();
@@ -66,6 +69,7 @@ $(document).ready(function(){
                 $("#loader").hide();
                 $(".loader-text").hide();
                 $("#rate").text("Your nsfw rate: " + rate * 100 + "%");
+                $("#rate").show();
         },
         error: function(jqXHR, textStatus, errorMessage) {
             console.log(errorMessage); // Optional
