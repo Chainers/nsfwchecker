@@ -30,7 +30,7 @@ $(document).ready(function(){
                     var rate = Number((value).toFixed(2));
                     $("#loader").hide();
                     $(".loader-text").hide();
-                    $("#rate").text("Your nsfw rate: " + rate * 100 + "%");
+                    $("#rate").text("Your NSFW rate: " + rate * 100 + "%");
             },
             error: function(jqXHR, textStatus, errorMessage) {
                 console.log(errorMessage); // Optional
