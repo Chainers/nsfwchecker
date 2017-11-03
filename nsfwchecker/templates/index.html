@@ -12,16 +12,17 @@
     <h2 style="color:#1a5099;font-size:30px;">NSFW Checker</h2>
     <h1 style="color:#ff001f;font-size:40px;">Is my image safe for work?</h1>
     <img src="" style="max-width:200px; max-height:200px;" />
+    <div class='loader-text' style="color:#1a5099; font-weight:bold; padding: 8px 0px;">Getting NSFW score for the image</div>
+    <div id="loader"></div><br>
+    <p id="rate" style="color:#1a5099; font-size:24px; font-weight:bold"></p>
     <div>
-    <span style="background-color:#1a5099; height:18px; color: white; padding:10px; font-weight: bold; display: inline-block; margin: 20px 0px; cursor:pointer;" class='select-file'>Select File</span>
+    <span style="background-color:#1a5099; height:18px; color: white; padding:10px; font-weight: bold; display: inline-block; margin-bottom: 20px; cursor:pointer; border-radius: 10px;" class='select-file'>Select File</span>
     </div>
     <input type="file" id="ff" style="visibility:hidden;">
     <div style="color:#1a5099; font-weight:bold; padding-bottom: 8px;">or paste image URL here</div>
     <div>
-    <input type='text' style="height:38px; border-color:#1a5099; border-style:solid;" class='url' />
-    <span style="background-color:#1a5099; color: white; padding:10px; font-weight: bold; display: inline-block; border: 2px solid; border-color:#1a5099; height: 20px; cursor:pointer;" class='checkbtn'>Check</span>
+    <input type='text' style="height:38px; border-color:#1a5099; border-style:solid; border-radius: 10px; outline:none" class='url' />
+    <span style="background-color:#1a5099; color: white; padding:10px; font-weight: bold; display: inline-block; border: 2px solid; border-color:#1a5099; height: 20px; cursor:pointer; border-radius: 10px;" class='checkbtn'>Check</span>
     </div>
-    <div id="loader"></div><br>
-    <p id="rate"></p>
 </div>
 {% endblock %}
